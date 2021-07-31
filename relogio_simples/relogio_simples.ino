@@ -36,7 +36,7 @@ void loop(){
   DateTime now = rtc.now();
   hora = now.hour();
   minuto = now.minute();
-  display.showNumberDecEx((hora * 100) + minuto, 0x40);
+  display.showNumberDecEx((hora * 100) + minuto, 0x40, 1, 4, 0);
   
   delay(1000);
 }
